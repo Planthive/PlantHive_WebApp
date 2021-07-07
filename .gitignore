@@ -1,8 +1,17 @@
+# python tmp files
+*pyc
+*__init__.py
+/__pycache__
+/__pycache__/
+
+
+
 # Build and Release Folders
 bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
+*egg-info
 
 # Other files and folders
 .settings/
@@ -12,7 +21,3 @@ bin-release/
 *.air
 *.ipa
 *.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.

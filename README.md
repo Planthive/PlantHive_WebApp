@@ -11,3 +11,9 @@
 ```
 pip3 install -e .
 ```
+
+## Runn server
+
+```
+python manage.py runserver
+```
