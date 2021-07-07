@@ -19,6 +19,10 @@ setup(
     keywords = "example documentation tutorial",
     url = "https://github.com/fedlucchetti/FFR-Toolkit.git",
     # package_dir = {'bin/modules/'},include_package_data=True,
+    install_requires=[
+            'mongodb',
+            'django',
+            'matplotlib'],
     packages=find_packages(include=['webide']),
     long_description=read('README.md'),
     classifiers=[
