@@ -2,6 +2,7 @@
 
 {% block content %}
 {% if chart %}
+   <button onclick="location.href='{% url 'script' %}'">Import Json to Mongo DB</button> <hr>
    <img src="data:image/png;base64,{{chart|safe}}">
 {% endif %}
 {% endblock content %}
