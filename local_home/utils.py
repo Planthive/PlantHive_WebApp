@@ -14,9 +14,9 @@ def get_graph():
 
 def get_plot(x,y):
     plt.switch_backend('AGG')
-    plt.figure(figsize=(5,2))
+    plt.figure(figsize=(7,4))
     plt.title('White')
-    plt.plot(x,y)
+    plt.plot(x,y[0],x,y[1],x,y[2],x,y[3],x,y[4],x,y[5])
     plt.xlabel('time')
     plt.ylabel('LED')
     graph=get_graph()
