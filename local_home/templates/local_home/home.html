@@ -2,7 +2,26 @@
 
 {% block content %}
 {% if chart %}
-   <button onclick="location.href='{% url 'script' %}'">Import Json to Mongo DB</button> <hr>
+   <button onclick="location.href='{% url 'StartStop' %}'">Start/Stop Growth recipe</button>
+   <button onclick="location.href='{% url 'ImportData' %}'">Import Growth recipe</button>
+   <button onclick="location.href='{% url 'ExportData' %}'">Export Sensor Data and Image</button>
+   <hr>
+   <h2>
+    Sensor readings
+   </h2>>
    <img src="data:image/png;base64,{{chart|safe}}">
+   <div>{{ obj }}</div>
+   <h2>
+    growth recipe
+   </h2>>
+   <img src="data:image/png;base64,{{growthrecipe_chart|safe}}">
+   <div>{{ obj }}</div>
+
+   <h2>
+    Latest image recorded
+   </h2>>
+   <img src="data:image/png;base64,{{img|safe}}">
+   <div>{{ obj }}</div>
+
 {% endif %}
 {% endblock content %}

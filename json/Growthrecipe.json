@@ -1,0 +1,366 @@
+{
+  "isactive":1,
+  "timestamps":{
+        "10.09.2021 09:00": {
+          "isexecuted":0,
+      	"sensors":{
+             "temperature":{
+      			"air":{
+      				"targetvalue": 22,
+      				"targetrange": {
+      				  "max": 24,
+      				  "min": 15
+      					     }
+      				},
+      			"water":{
+      				"targetvalue": null,
+      				"targetrange": {
+      				  "max": null,
+      				  "min": null
+      					     }
+      				}
+      	     },
+      		 	"humidity":{
+      				"targetvalue":60 ,
+      				"targetrange": {
+      				  "max": 70,
+      				  "min": 50
+      					     }
+      				},
+      		 	"soilmoisture":{
+      				"targetvalue": 20,
+      				"targetrange": {
+      				  "max": 30,
+      				  "min": 10
+      					     }
+      				},
+      		 	"waterlevel":{
+      			  "targetvalue": null,
+      				"targetrange": {
+      				  "max": null,
+      				  "min": null
+      					     }
+      				}
+
+      	        },
+      	 "actuators":{
+           "led":{
+      		   "blue":{
+      			   "targetvalue": 50
+      				       },
+      			 "green":{
+      				 "targetvalue": 40
+      				       },
+      			 "red":{
+      				 "targetvalue": 70
+      			     	},
+      			 "farred":{
+      			  	"targetvalue": 0
+      				        }
+                  }
+      		}
+       },
+         "10.09.2021 21:00": {
+          "isexecuted":0,
+      	"sensors":{
+             "temperature":{
+      			"air":{
+      				"targetvalue": 18,
+      				"targetrange": {
+      				  "max": 20,
+      				  "min": 16
+      					     }
+      				},
+      			"water":{
+      				"targetvalue": null,
+      				"targetrange": {
+      				  "max": null,
+      				  "min": null
+      					     }
+      				}
+      	     },
+      		 	"humidity":{
+      				"targetvalue":90 ,
+      				"targetrange": {
+      				  "max": 100,
+      				  "min": 80
+      					     }
+      				},
+      		 	"soilmoisture":{
+      				"targetvalue": 20,
+      				"targetrange": {
+      				  "max": 30,
+      				  "min": 10
+      					     }
+      				},
+      		 	"waterlevel":{
+      				"targetvalue": null,
+      				"targetrange": {
+      				  "max": null,
+      				  "min": null
+      					     }
+      				}
+
+      	        },
+
+      	 "actuators":{
+          "led":{
+      			"blue":{
+      				"targetvalue": 0
+      				},
+      			"green":{
+      				"targetvalue": 0
+      				},
+      			"red":{
+      				"targetvalue": 0
+      				},
+      			"farred":{
+      				"targetvalue": 0
+      				}
+                     }
+      		}
+       },
+        "11.09.2021 09:00": {
+          "isexecuted":0,
+      	"sensors":{
+             "temperature":{
+      			"air":{
+      				"targetvalue": 22,
+      				"targetrange": {
+      				  "max": 24,
+      				  "min": 15
+      					     }
+      				},
+      			"water":{
+      				"targetvalue": null,
+      				"targetrange": {
+      				  "max": null,
+      				  "min": null
+      					     }
+      				}
+      	     },
+      		 	"humidity":{
+      				"targetvalue":60 ,
+      				"targetrange": {
+      				  "max": 70,
+      				  "min": 50
+      					     }
+      				},
+      		 	"soilmoisture":{
+      				"targetvalue": 20,
+      				"targetrange": {
+      				  "max": 30,
+      				  "min": 10
+      					     }
+      				},
+      		 	"waterlevel":{
+      				"targetvalue": null,
+      				"targetrange": {
+      				  "max": null,
+      				  "min": null
+      					     }
+      				}
+
+      	        },
+
+      	 "actuators":{
+                "led":{
+      			"blue":{
+      				"targetvalue": 50
+      				},
+      			"green":{
+      				"targetvalue": 40
+      				},
+      			"red":{
+      				"targetvalue": 70
+      				},
+      			"farred":{
+      				"targetvalue": 0
+      				}
+                  }
+      		}
+       },
+         "11.09.2021 21:00": {
+          "isexecuted":0,
+      	"sensors":{
+             "temperature":{
+      			"air":{
+      				"targetvalue": 18,
+      				"targetrange": {
+      				  "max": 20,
+      				  "min": 16
+      					     }
+      				},
+      			"water":{
+      				"targetvalue": null,
+      				"targetrange": {
+      				  "max": null,
+      				  "min": null
+      					     }
+      				}
+      	     },
+      		 	"humidity":{
+      				"targetvalue":90 ,
+      				"targetrange": {
+      				  "max": 100,
+      				  "min": 80
+      					     }
+      				},
+      		 	"soilmoisture":{
+      				"targetvalue": 20,
+      				"targetrange": {
+      				  "max": 30,
+      				  "min": 10
+      					     }
+      				},
+      		 	"waterlevel":{
+      				"targetvalue": null,
+      				"targetrange": {
+      				  "max": null,
+      				  "min": null
+      					     }
+      				}
+
+      	        },
+
+      	 "actuators":{
+                "led":{
+      			"blue":{
+      				"targetvalue": 0
+      				},
+      			"green":{
+      				"targetvalue": 0
+      				},
+      			"red":{
+      				"targetvalue": 0
+      				},
+      			"farred":{
+      				"targetvalue": 0
+      				}
+                  }
+      		}
+       },
+
+         "12.09.2021 09:00": {
+          "isexecuted":0,
+      	"sensors":{
+             "temperature":{
+      			"air":{
+      				"targetvalue": 22,
+      				"targetrange": {
+      				  "max": 24,
+      				  "min": 15
+      					     }
+      				},
+      			"water":{
+      				"targetvalue": null,
+      				"targetrange": {
+      				  "max": null,
+      				  "min": null
+      					     }
+      				}
+      	     },
+      		 	"humidity":{
+      				"targetvalue":60 ,
+      				"targetrange": {
+      				  "max": 70,
+      				  "min": 50
+      					     }
+      				},
+      		 	"soilmoisture":{
+      				"targetvalue": 20,
+      				"targetrange": {
+      				  "max": 30,
+      				  "min": 10
+      					     }
+      				},
+      		 	"waterlevel":{
+      				"targetvalue": null,
+      				"targetrange": {
+      				  "max": null,
+      				  "min": null
+      					     }
+      				}
+
+      	        },
+
+      	 "actuators":{
+                "led":{
+      			"blue":{
+      				"targetvalue": 50
+      				},
+      			"green":{
+      				"targetvalue": 40
+      				},
+      			"red":{
+      				"targetvalue": 70
+      				},
+      			"farred":{
+      				"targetvalue": 0
+      				}
+                  }
+      		}
+       },
+         "12.09.2021 21:00": {
+          "isexecuted":0,
+      	"sensors":{
+             "temperature":{
+      			"air":{
+      				"targetvalue": 18,
+      				"targetrange": {
+      				  "max": 20,
+      				  "min": 16
+      					     }
+      				},
+      			"water":{
+      				"targetvalue": null,
+      				"targetrange": {
+      				  "max": null,
+      				  "min": null
+      					     }
+      				}
+      	     },
+      		 	"humidity":{
+      				"targetvalue":90 ,
+      				"targetrange": {
+      				  "max": 100,
+      				  "min": 80
+      					     }
+      				},
+      		 	"soilmoisture":{
+      				"targetvalue": 20,
+      				"targetrange": {
+      				  "max": 30,
+      				  "min": 10
+      					     }
+      				},
+      		 	"waterlevel":{
+      				"targetvalue": null,
+      				"targetrange": {
+      				  "max": null,
+      				  "min": null
+      					     }
+      				}
+
+      	        },
+
+      	 "actuators":{
+                "led":{
+      			"blue":{
+      				"targetvalue": 0
+      				},
+      			"green":{
+      				"targetvalue": 0
+      				},
+      			"red":{
+      				"targetvalue": 0
+      				},
+      			"farred":{
+      				"targetvalue": 0
+      				}
+                  }
+      		}
+       }
+
+  }
+}

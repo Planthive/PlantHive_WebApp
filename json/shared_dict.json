@@ -1,0 +1,184 @@
+{
+  "actuators": {
+    "led": {
+      "white": {
+        "channel": 10,
+        "ispresent": 1,
+        "wavelength": 4500,
+        "current": -1,
+        "state": 1,
+        "value": 75
+      },
+      "blue": {
+        "channel": 12,
+        "ispresent": 1,
+        "wavelength": 420,
+        "current": -1,
+        "state": 1,
+        "value": 75
+      },
+      "green": {
+        "channel": 11,
+        "ispresent": 1,
+        "wavelength": 510,
+        "current": -1,
+        "state": 1,
+        "value": 75
+      },
+      "red1": {
+        "channel": 13,
+        "ispresent": 1,
+        "wavelength": 650,
+        "current": -1,
+        "state": 1,
+        "value": 75
+      },
+      "red2": {
+        "channel": 14,
+        "ispresent": 1,
+        "wavelength": 650,
+        "current": -1,
+        "state": 1,
+        "value": 75
+      },
+      "farred": {
+        "channel": 15,
+        "ispresent": 1,
+        "wavelength": 720,
+        "current": -1,
+        "state": 1,
+        "value": 75
+      }
+    },
+    "ventilatorfans": {
+      "front": {
+        "channel": 7,
+        "ispresent": 1,
+        "current": -1,
+        "state": 1,
+        "value": 100,
+        "period_on": 50,
+        "period_off": 100
+      },
+      "back": {
+        "channel": 8,
+        "ispresent": 1,
+        "current": -1,
+        "state": 1,
+        "value": 100,
+        "period_on": 50,
+        "period_off": 100
+      },
+      "led": {
+        "channel": 9,
+        "ispresent": 1,
+        "current": -1,
+        "state": 1,
+        "value": 100,
+        "period_on": 50,
+        "period_off": 100
+      }
+    },
+    "airpump": {
+      "channel": -1,
+      "ispresent": 1,
+      "current": -1,
+      "state": 1,
+      "value": 100,
+      "period_on": 50,
+      "period_off": 100
+    },
+    "humidifier": {
+      "channel": -1,
+      "ispresent": 1,
+      "current": -1,
+      "state": 1,
+      "value": 100,
+      "period_on": 50,
+      "period_off": 100
+    },
+    "peltier": {
+      "channel": -1,
+      "ispresent": 1,
+      "current": -1,
+      "state": 1,
+      "value": 100,
+      "period_on": 50,
+      "period_off": 100
+    },
+    "peltierfan": {
+      "channel": -1,
+      "ispresent": 1,
+      "current": -1,
+      "state": 1,
+      "value": 100,
+      "period_on": 50,
+      "period_off": 100
+    }
+  },
+  "sensors": {
+    "temperature": {
+      "air": {
+        "ispresent": 1,
+        "state": 1,
+        "value": 22.2,
+        "targetvalue": 25.2,
+        "targetrange": {
+          "min": 20,
+          "max": 26
+        },
+        "current": 12
+      },
+      "water": {
+        "ispresent": 1,
+        "state": 1,
+        "value": 22.2,
+        "targetvalue": 25.2,
+        "targetrange": {
+          "min": 20,
+          "max": 26
+        },
+        "current": 12
+      }
+    },
+    "humidity": {
+      "ispresent": 1,
+      "state": 1,
+      "value": 22.2,
+      "targetvalue": 25.2,
+      "targetrange": {
+        "min": 20,
+        "max": 26
+      },
+      "current": 12
+    },
+    "waterlevel": {
+      "ispresent": 1,
+      "state": 1,
+      "value": 22.2,
+      "targetvalue": 25.2,
+      "targetrange": {
+        "min": 20,
+        "max": 26
+      },
+      "current": 12
+    }
+  },
+  "metadata": {
+    "serialnumber": "4522415DF52",
+    "timestamp": "2021-04-29 12:11:03.911689",
+    "model": "beta02",
+    "timezone": "GMT+2",
+    "software_version": "3.0.1"
+  },
+  "system": {
+    "log": {
+      "message": "hello world",
+      "flag": 1
+    },
+    "action": {
+      "message": "update in 5 days",
+      "flag": 1
+    }
+  }
+}

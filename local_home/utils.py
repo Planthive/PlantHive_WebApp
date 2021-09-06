@@ -1,6 +1,10 @@
 import matplotlib.pyplot as plt
 import base64
 from io import BytesIO
+from pymongo import MongoClient
+from datetime import datetime
+import numpy as np
+from PIL import Image
 
 def get_graph():
     buffer=BytesIO()
@@ -21,3 +25,61 @@ def get_plot(x,y):
     plt.ylabel('LED')
     graph=get_graph()
     return graph
+
+def get_image(query_data):
+    for data in query_data:
+        dt=data.metadata
+        ts=dt['timestamp']
+        dt = datetime.strptime(ts, '%Y-%m-%d %H:%M:%S.%f')
+
+        img=data.data
+        imgdata = np.zeros((5, 5, 3), dtype=np.uint8)
+        imgdata[:,:,0]=img['red']['matrix']
+        imgdata[:,:,1]=img['green']['matrix']
+        imgdata[:,:,2]=img['blue']['matrix']
+        img = Image.fromarray(imgdata, 'RGB')
+        buffer = BytesIO()
+        img.save(buffer, format='PNG')
+
+        buffer.seek(0)
+        image_png=buffer.getvalue()
+        img=base64.b64encode(image_png)
+        img=img.decode('utf-8')
+        buffer.close()
+        return img
+
+def get_climate_recipe(query_data):
+    # start with empty list
+    x=[]
+    y = [[] for _ in range(9)]
+    for data in query_data:
+        dt=data.timestamps
+        key=list(dt.keys())
+        for data_ in key:
+            ts=data_
+            ts = datetime.strptime(ts, '%d.%m.%Y %H:%M')
+            x.append(ts)
+
+            entry=dt[data_]
+            y[0].append(entry['sensors']['temperature']['air']['targetvalue'])
+            y[1].append(entry['sensors']['temperature']['water']['targetvalue'])
+            y[2].append(entry['sensors']['humidity']['targetvalue'])
+            y[3].append(entry['sensors']['soilmoisture']['targetvalue'])
+            y[4].append(entry['sensors']['waterlevel']['targetvalue'])
+            y[5].append(entry['actuators']['led']['blue']['targetvalue'])
+            y[6].append(entry['actuators']['led']['green']['targetvalue'])
+            y[7].append(entry['actuators']['led']['red']['targetvalue'])
+            y[8].append(entry['actuators']['led']['farred']['targetvalue'])
+
+        growthrecipe_chart = get_plot(x,y)
+
+        return growthrecipe_chart
+
+# def get_db_handle(db_name, host, port, username, password):
+#     client = MongoClient(host=host,
+#                       port=int(port),
+#                       username=username,
+#                       password=password
+#                      )
+#     db_handle = client['db_name']
+#     return db_handle, client

@@ -18,5 +18,6 @@ from django.urls import path, include
 # this is a UserAttributeSimilarityValidator
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('local_home.urls')),
+    path('home/', include('local_home.urls')),
+    path('', include('myapi.urls')),
 ]
