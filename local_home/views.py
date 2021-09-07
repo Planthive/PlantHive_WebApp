@@ -47,7 +47,6 @@ def home(request):
 
     x=[]
     y = [[] for _ in range(6)]
-    i=0
     for data in query_data:
         dt=data.metadata
         ts=dt['timestamp']

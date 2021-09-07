@@ -55,12 +55,26 @@ def get_climate_recipe(query_data):
     for data in query_data:
         dt=data.timestamps
         key=list(dt.keys())
+        i=0
         for data_ in key:
             ts=data_
             ts = datetime.strptime(ts, '%d.%m.%Y %H:%M')
             x.append(ts)
 
             entry=dt[data_]
+            if i>0:
+                previous_entry=dt[key[i-1]]
+                x.append(ts)
+                y[0].append(previous_entry['sensors']['temperature']['air']['targetvalue'])
+                y[1].append(previous_entry['sensors']['temperature']['water']['targetvalue'])
+                y[2].append(previous_entry['sensors']['humidity']['targetvalue'])
+                y[3].append(previous_entry['sensors']['soilmoisture']['targetvalue'])
+                y[4].append(previous_entry['sensors']['waterlevel']['targetvalue'])
+                y[5].append(previous_entry['actuators']['led']['blue']['targetvalue'])
+                y[6].append(previous_entry['actuators']['led']['green']['targetvalue'])
+                y[7].append(previous_entry['actuators']['led']['red']['targetvalue'])
+                y[8].append(previous_entry['actuators']['led']['farred']['targetvalue'])
+
             y[0].append(entry['sensors']['temperature']['air']['targetvalue'])
             y[1].append(entry['sensors']['temperature']['water']['targetvalue'])
             y[2].append(entry['sensors']['humidity']['targetvalue'])
@@ -71,6 +85,7 @@ def get_climate_recipe(query_data):
             y[7].append(entry['actuators']['led']['red']['targetvalue'])
             y[8].append(entry['actuators']['led']['farred']['targetvalue'])
 
+            i=i+1
         growthrecipe_chart = get_plot(x,y)
 
         return growthrecipe_chart
