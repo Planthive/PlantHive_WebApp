@@ -1,9 +1,9 @@
 {
  "growth_schedule_template":{
-  "start_time":10.09.2021 09:00,
-  "end_time":10.10.2021 09:00,
+  "start_time": "10.09.2021 09:00",
+  "end_time": "10.10.2021 09:00",
   "day":{
-    "start":09:00,
+    "start": "09:00",
     "sensors":{
       "temperature":{
         "air":{
@@ -11,30 +11,30 @@
           "targetrange":{
             "min":19,
             "max":22
-          },
+          }
         },
         "water":{
           "targetvalue":21,
           "targetrange":{
             "min":19,
             "max":22
-          },
-        },
+          }
+        }
       },
       "humidity":{
         "targetvalue":80,
         "targetrange":{
           "min":70,
           "max":90
-        },
+        }
       },
       "waterlevel":{
         "targetvalue":8,
         "targetrange":{
           "min":7,
           "max":9
-        },
-      },
+        }
+      }
     },
     "actuators":{
       "led":{
@@ -55,12 +55,12 @@
         },
         "farred":{
           "value":10
-        },
-      },
-    },
+        }
+      }
+    }
   },
   "night":{
-    "start":22:00,
+    "start":"22:00",
     "sensors":{
       "temperature":{
         "air":{
@@ -68,30 +68,30 @@
           "targetrange":{
             "min":13,
             "max":25
-          },
+          }
         },
         "water":{
           "targetvalue":10,
           "targetrange":{
             "min":9,
             "max":11
-          },
-        },
+          }
+        }
       },
       "humidity":{
         "targetvalue":100,
         "targetrange":{
           "min":90,
           "max":100
-        },
+        }
       },
       "waterlevel":{
         "targetvalue":8,
         "targetrange":{
           "min":7,
           "max":9
-        },
-      },
+        }
+      }
     },
     "actuators":{
       "led":{
