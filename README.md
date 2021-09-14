@@ -15,6 +15,8 @@ pip3 install -e .
 ## Run server
 
 ```
+python manage.py makemigrations
+
 python manage.py migrate
 
 python manage.py runserver
