@@ -6,12 +6,15 @@ import json, socket,fcntl,struct
 from os.path import split,realpath
 import configparser as ConfigParser
 import urllib as urllib2
-import os
+import os, socket
 # import urllib2
 
 
 
 ## Context Path
+
+def getIPAddress():
+    return socket.gethostbyname(socket.gethostname())
 
 
 def write_2_file(data):
