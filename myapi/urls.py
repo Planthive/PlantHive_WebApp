@@ -5,7 +5,7 @@ from . import views
 
 
 router = routers.DefaultRouter()
-router.register(r'heroes', views.UploadViewSet)
+router.register(r'growth_schedule', views.Growth_scheduleViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.

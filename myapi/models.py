@@ -7,8 +7,6 @@ from djongo import models
 #     def __str__(self):
 #         return self.name
 
-class upload(models.Model):
-    actuators=models.JSONField()
-    sensors=models.JSONField()
-    metadata=models.JSONField()
-    system=models.JSONField()
+class growth_schedule(models.Model):
+    isactive=models.BooleanField()
+    timestamps=models.JSONField()
