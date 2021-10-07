@@ -20,7 +20,6 @@ setup(
     url = "https://github.com/Planthive/PlantHive_WebApp",
     # package_dir = {'bin/modules/'},include_package_data=True,
     install_requires=[
-            'mongodb',
             'django',
             'djongo',
             'djangorestframework',
